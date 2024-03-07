@@ -1,0 +1,49 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /Users/moleculego/Projects/BT_R1/Cry1Ab/Structural_Info/rcsb_pdb_6DJ4.fasta
+# target HMM database:             Berliner_MC_hmm
+# output directed to file:         Berliner_MC_scan
+# max ASCII text line length:      unlimited
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       6DJ4_1|Chain  [L=591]
+Description: A|Cry1A.105|Bacillus thuringiensis (1428)
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   9.1e-207  672.2  12.2   1.1e-206  671.9  12.2    1.1  1  Berliner_MC  
+
+
+Domain annotation for each model (and alignments):
+>> Berliner_MC  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  671.9  12.2  1.1e-206  1.1e-206       1     361 []     231     591 .]     231     591 .] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 671.9 bits;  conditional E-value: 1.1e-206
+   Berliner_MC   1 tvsqltreiytnpvlenfdgsfrgsaqgiegsirsphlmdilnsitiytdahrgeyywsghqimaspvgfsgpeftfplygtmgnaapqqrivaqlgqgvyrtlsstlyrrpfniginnqqlsvldgtefaygtssnlpsavyrksgtvdsldeippqnnnvpprqgfshrlshvsmfrsgfsnssvsiirapmfswihrsaefnniipssqitqipltkstnlgsgtsvvkgpgftggdilrrtspgqistlrvnitaplsqryrvriryasttnlqfhtsidgrpinqgnfsatmssgsnlqsgsfrtvgfttpfnfsngssvftlsahvfnsgnevyidriefvpaevtfeaeydler 361
+                   tvsqltreiytnpvlenfdgsfrgsaqgiegsirsphlmdilnsitiytdahrgeyywsghqimaspvgfsgpeftfplygtmgnaapqqrivaqlgqgvyrtlsstlyrrpfniginnqqlsvldgtefaygtssnlpsavyrksgtvdsldeippqnnnvpprqgfshrlshvsmfrsgfsnssvsiirapmfswihrsaefnnii s  itqipl k+  l sgt+vv+gpgftggdilrrts g  +   vni   l qryr riryasttnl+++ ++ g  i  g+f  tm +g  l   sf    + t f f    s ft+ a  f sgnevyidr e++p   t+eaey+ler
+  6DJ4_1|Chain 231 TVSQLTREIYTNPVLENFDGSFRGSAQGIEGSIRSPHLMDILNSITIYTDAHRGEYYWSGHQIMASPVGFSGPEFTFPLYGTMGNAAPQQRIVAQLGQGVYRTLSSTLYRRPFNIGINNQQLSVLDGTEFAYGTSSNLPSAVYRKSGTVDSLDEIPPQNNNVPPRQGFSHRLSHVSMFRSGFSNSSVSIIRAPMFSWIHRSAEFNNIIASDSITQIPLVKAHTLQSGTTVVRGPGFTGGDILRRTSGGPFAYTIVNINGQLPQRYRARIRYASTTNLRIYVTVAGERIFAGQFNKTMDTGDPLTFQSFSYATINTAFTFPMSQSSFTVGADTFSSGNEVYIDRFELIPVTATLEAEYNLER 591
+                   8***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (591 residues searched)
+Target model(s):                           1  (361 nodes)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7.11
+//
+[ok]
