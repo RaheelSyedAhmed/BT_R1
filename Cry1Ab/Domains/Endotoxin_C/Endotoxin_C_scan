@@ -1,0 +1,49 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /Users/moleculego/Projects/BT_R1/Cry1Ab/Structural_Info/rcsb_pdb_6DJ4.fasta
+# target HMM database:             Endotoxin_C.hmm
+# output directed to file:         Endotoxin_C_scan
+# max ASCII text line length:      unlimited
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       6DJ4_1|Chain  [L=591]
+Description: A|Cry1A.105|Bacillus thuringiensis (1428)
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.6e-48  149.7   2.0    6.5e-48  148.9   2.0    1.4  1  Endotoxin_C  delta endotoxin
+
+
+Domain annotation for each model (and alignments):
+>> Endotoxin_C  delta endotoxin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  148.9   2.0   6.5e-48   6.5e-48       1     142 []     443     580 ..     443     580 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 148.9 bits;  conditional E-value: 6.5e-48
+   Endotoxin_C   1 itqiPavKaselnsgasvvkgpgftGGdlvklstssgllgklrvtvtaslsqrYriRiRYAsnanlklsvsiggssinqinlpstmsggenltlkyesFkyvefsttftfseseeetltlsitnessnqelyiDrIEFiPvn 142
+                   itqiP+vKa++l+sg++vv+gpgftGGd++ ++ts+g ++++ v+++++l qrYr RiRYAs++nl+++v++ g++i   ++++tm++g++lt  ++sF+y++++t ftf+ s+ +++t+ ++ +ss++e+yiDr E+iPv+
+  6DJ4_1|Chain 443 ITQIPLVKAHTLQSGTTVVRGPGFTGGDIL-RRTSGGPFAYTIVNINGQLPQRYRARIRYASTTNLRIYVTVAGERIFAGQFNKTMDTGDPLT--FQSFSYATINTAFTFPMSQ-SSFTVGADTFSSGNEVYIDRFELIPVT 580
+                   9*****************************.777788889999**************************************************..*******************.*************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (591 residues searched)
+Target model(s):                           1  (142 nodes)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8.39
+//
+[ok]

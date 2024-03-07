@@ -1,0 +1,49 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /Users/moleculego/Projects/BT_R1/Cry1Ab/Structural_Info/rcsb_pdb_6DJ4.fasta
+# target HMM database:             Endotoxin_M.hmm
+# output directed to file:         Endotoxin_M_scan
+# max ASCII text line length:      unlimited
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       6DJ4_1|Chain  [L=591]
+Description: A|Cry1A.105|Bacillus thuringiensis (1428)
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.9e-60  189.2   2.0    1.2e-59  187.9   2.0    1.7  1  Endotoxin_M  delta endotoxin
+
+
+Domain annotation for each model (and alignments):
+>> Endotoxin_M  delta endotoxin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  187.9   2.0   1.2e-59   1.2e-59       1     204 []     231     433 ..     231     433 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 187.9 bits;  conditional E-value: 1.2e-59
+   Endotoxin_M   1 tkseLTReiYTDpvgeeserglniyptfselenalirsphlfdfLnsltiytnssrgstsinywsGhrvtfsrtggs.niiseplyGnttnaenpktis.ftnrdiyrtlsatsnsisge...lnnpvngvtkvefyganntnseissqayrnsgqtidsldelPpetnnepiyesysHrLshvtllsskltqlas.a..vpvfsWtHrsvd 204
+                   t s+LTReiYT+pv e+  +  ++  + + +e + irsphl+d+Lns+tiyt+ +rg    +ywsGh+++ s+ g+s +  ++plyG+ +na++++ i    ++++yrtls+t ++++++   +n++++++ ++ef    +t+s+  s+ yr+sg t+dslde+Pp++nn+p+ +++sHrLshv +++s ++++   +  +p+fsW+Hrs++
+  6DJ4_1|Chain 231 TVSQLTREIYTNPVLENFDGSFRG--SAQGIEGS-IRSPHLMDILNSITIYTDAHRG---EYYWSGHQIMASPVGFSgPEFTFPLYGTMGNAAPQQRIVaQLGQGVYRTLSSTLYRRPFNigiNNQQLSVLDGTEFAY--GTSSNLPSAVYRKSG-TVDSLDEIPPQNNNVPPRQGFSHRLSHVSMFRSGFSNSSVsIirAPMFSWIHRSAE 433
+                   679**************9884444..66678888.**********************...9*************************************9999999**************9**99999*********99..78899*******999.*************************************877559***********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (591 residues searched)
+Target model(s):                           1  (204 nodes)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6.03
+//
+[ok]
