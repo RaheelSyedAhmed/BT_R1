@@ -1,0 +1,49 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../Structural_Info/trunc_rcsb_pdb_7TNI.fasta
+# target HMM database:             EC12_hmm
+# output directed to file:         EC12_scan
+# max ASCII text line length:      unlimited
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Truncated  [L=110]
+Description: 7TNI_1|Chains A, B, C, D|Cadherin|Manduca sexta (7130)
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.5e-79  249.0   1.2    2.8e-79  248.8   1.2    1.0  1  Q9GPJ9_EC12  
+
+
+Domain annotation for each model (and alignments):
+>> Q9GPJ9_EC12  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  248.8   1.2   2.8e-79   2.8e-79       1     110 [.       1     110 []       1     110 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 248.8 bits;  conditional E-value: 2.8e-79
+  Q9GPJ9_EC12   1 dprpvfvrelytagistadsigrellrlhatqsegsaityaidydtmvvdpsleavrqsafvlnaqtgvltlniqptatmhglfkfevtatdtagaqdrtdvtvyvvssq 110
+                  dprpvfvrelytagistadsigrellrlhatqsegsaityaid+dtmvvdpsleavrqsafvlnaqtgvltlniqptatmhglfkfevtatdtagaqdrtdvtvyvvssq
+    Truncated   1 DPRPVFVRELYTAGISTADSIGRELLRLHATQSEGSAITYAIDWDTMVVDPSLEAVRQSAFVLNAQTGVLTLNIQPTATMHGLFKFEVTATDTAGAQDRTDVTVYVVSSQ 110
+                  9************************************************************************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (110 residues searched)
+Target model(s):                           1  (112 nodes)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
+//
+[ok]
