@@ -1,0 +1,3 @@
+Maximum number of continous gaps per sequence: 65
+Original number of sequences: 3644
+Number(%) of sequences excluded: 437 (11.99%)
