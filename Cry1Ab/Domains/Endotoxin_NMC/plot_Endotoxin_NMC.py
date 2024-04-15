@@ -23,6 +23,7 @@ class Pairs_GO:
                                         mode='markers', marker_size=self.m_size, marker_color=self.m_color, marker_symbol=self.m_symbol, 
                                         name=self.name)
     def update_pairs(self, cutoff):
+        print(cutoff if cutoff < 20 else "")
         if self.mirror:
             self.scatter = go.Scattergl(x=self.mirror_i[:cutoff], y=self.mirror_j[:cutoff], 
                                         mode='markers', marker_size=self.m_size, marker_color=self.m_color, marker_symbol=self.m_symbol, 
@@ -40,10 +41,12 @@ class DI_GO(Pairs_GO):
         if region_length is not None:
             self.region_length = region_length
         else:
-            try:
-                self.region_length = max(max(self.resid_i), max(self.resid_j)) - min(min(self.resid_i), min(self.resid_j))
-            except:
-                pass
+            min_i = min(self.resid_i)
+            min_j = min(self.resid_j)
+            max_i = max(self.resid_i)
+            max_j = max(self.resid_j)
+            self.region_length = max(max_i, max_j) - min(min_i, min_j)
+
         self.max_len = self.region_length * 10
         self.tick_len = math.ceil(self.max_len / 1000)
         self.slider_ID = f'DI_slider_{name}'
@@ -130,10 +133,10 @@ def update_figure(relay_data, monomer_checklist, di_pair_checklist, slider_list)
         y_mins = []
         y_maxs = []
         for trace_data in fig.data:
-            y_mins.append(min(trace_data.y))
-            y_maxs.append(max(trace_data.y))
-        y_min = min(y_mins)
-        y_max = max(y_maxs)
+            y_mins.append(min(trace_data.y, default=0))
+            y_maxs.append(max(trace_data.y, default=0))
+        y_min = min(y_mins, default=0)
+        y_max = max(y_maxs, default=0)
         fig.update_yaxes(range=[y_max, y_min])
     
     if relay_data and 'xaxis.range[0]' in relay_data:
