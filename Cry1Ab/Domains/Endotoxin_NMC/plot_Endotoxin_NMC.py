@@ -23,7 +23,6 @@ class Pairs_GO:
                                         mode='markers', marker_size=self.m_size, marker_color=self.m_color, marker_symbol=self.m_symbol, 
                                         name=self.name)
     def update_pairs(self, cutoff):
-        print(cutoff if cutoff < 20 else "")
         if self.mirror:
             self.scatter = go.Scattergl(x=self.mirror_i[:cutoff], y=self.mirror_j[:cutoff], 
                                         mode='markers', marker_size=self.m_size, marker_color=self.m_color, marker_symbol=self.m_symbol, 
@@ -64,7 +63,7 @@ potential_colors_dark = px.colors.qualitative.Dark24.copy()
 monomers = []
 DI_pair_GOs = []
 
-monomers.append(Monomer_GO("6DJ4 Natives", f"/Users/moleculego/Projects/BT_R1/Cry1Ab/Structural_Info/monomer_6dj4_allatom_8", ['gray', 3, 'circle'], mirror=False))
+monomers.append(Monomer_GO("6DJ4 Natives", f"/Users/moleculego/Projects/BT_R1/Cry1Ab/Structural_Info/6dj4_monomer_allatom_8", ['gray', 3, 'circle'], mirror=False))
 
 DI_pair_GOs.append(DI_GO("N Intra", f"Endotoxin_N_align_ranked_matched.DI", [potential_colors_dark.pop(0), 4, 'x']))
 DI_pair_GOs.append(DI_GO("M Intra", f"Endotoxin_M_align_ranked_matched.DI", [potential_colors_dark.pop(0), 4, 'x']))
